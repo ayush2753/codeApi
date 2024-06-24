@@ -15,6 +15,9 @@ class User{
     required this.nat,
     required this.name,
   });
+  String get fullName{
+    return '${name.title} ${name.first} ${name.last}';
+  }
 }
 
 class UserName{
@@ -27,4 +30,6 @@ class UserName{
     required this.first,
     required this.last
   });
+
+
 }
